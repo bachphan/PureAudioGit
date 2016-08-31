@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- DO NOT LEAVE THIS HERE: 759400e1bdad4a4caee9e0b3a23b412e <- CLIENT SECRET FOR SPOTIFY-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://blackrockdigital.github.io/startbootstrap-simple-sidebar/css/simple-sidebar.css" />
+        <link rel="stylesheet" href="home.css"/>
+    <!--<script src="soundmanager2.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <title>PureAudio</title>      
+    </head>
+    <body class="noscroll">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">PureAudio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Player<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Account Info</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        <div id="container">
+            <div id="stuff" class="row">
+                <div id="sidebar" class="col-md-2">
+                    <h4 id="lightText">Playlists</h4>
+                    <h5 id="lightText">Default</h5>
+                </div>
+                <div id="main" class="col-md-10 text-center">
+                    <div class="row"></div>
+                    <div id="img" class="row">
+                        <img src="stock.jpg" alt="STOCK" style="width:300px;height:300px;"/>
+                    </div>
+                    <div>
+                        <h3 id="songTitle"></h>
+                    </div>
+                    <div>
+                        <h5 id="songArtist"></h5>
+                    </div>
+                    <div id="glyphicons" class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-1">
+                            <div class = "glyphicon glyphicon-pause play-button" aria-hidden="true" style="cursor:pointer"></div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div class = "glyphicon glyphicon-thumbs-up like" aria-hidden="true" style="cursor:pointer"></div>
+                        </div>
+                        <div class="col-sm-1 fastforward">
+                            <div class="glyphicon glyphicon-thumbs-down dislike" aria-hidden="true" style="cursor:pointer"></div>
+                        </div>
+                        <div class="col-sm-1 fastforward">
+                            <div class="glyphicon glyphicon-forward" aria-hidden="true" style="cursor:pointer"></div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>

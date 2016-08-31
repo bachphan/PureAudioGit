@@ -1,0 +1,22 @@
+<html>
+<body>
+
+ <form action="api.php">
+  Name of Artist:<br>
+  <input type="text" name="NameOfArtist"><br>
+  Name of the song:<br>
+  <input type="text" name="SongsName"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<script>
+
+$.get( "api.php", function( data ) {
+  $( "body" )
+    .append( "Name: " + data.name )
+    .append( "Song: " + data.song );
+}, "json" );
+    
+</script>
+
+</body>
+</html>
